@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.ReactiveUI;
 namespace AvaloniaAppTemplate;
 
-public class MainView : ReactiveUserControl<MainViewModel>
+public class MainView : Window
 {
     public MainView()
     {
@@ -10,12 +10,14 @@ public class MainView : ReactiveUserControl<MainViewModel>
         Content = new StackPanel()
         {
             Children = 
-            new TextBlock()
             {
-            	Text = "Hello from NoXaml",
-            	HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
-            	VerticalAlignment = Avalonia.Layout.VerticalAlignment.Top,
-            	FontSize = 35,
+	            new TextBlock()
+    	        {
+        	    	Text = "Hello from NoXaml",
+            		HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
+            		VerticalAlignment = Avalonia.Layout.VerticalAlignment.Top,
+            		FontSize = 35,
+            	},
             }
         };
     }
