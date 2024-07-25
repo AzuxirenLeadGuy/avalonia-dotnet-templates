@@ -1,5 +1,6 @@
 using Avalonia.Controls;
 using Avalonia.ReactiveUI;
+using AvaloniaTest.ViewModels;
 namespace AvaloniaTest.Views;
 
 public class MainView : ReactiveUserControl<MainViewModel>

@@ -3,6 +3,8 @@ using Avalonia.Media;
 using Avalonia.Styling;
 using Avalonia.Themes.Fluent;
 
+using System.Linq;
+
 namespace AvaloniaTest;
 
 public readonly record struct FluentThemePack
@@ -11,7 +13,7 @@ public readonly record struct FluentThemePack
     public ThemeVariant Variant { init; get; }
     public void ApplyTheme(Application app)
     {
-        FluentTheme theme = this.Theme;
+        FluentTheme theme = Theme;
         app.Styles.RemoveAll(app.Styles.Where(x => x is FluentTheme));	// Remove previously present FluentTheme
         app.Styles.Add(theme);
         app.RequestedThemeVariant = this.Variant;
