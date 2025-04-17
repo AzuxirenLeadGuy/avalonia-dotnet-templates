@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <PackageVersion>11.2.7</PackageVersion>
-    <PackageId>Avalonia.Templates</PackageId>
+    <PackageId>Avalonia.Templates.Ajs</PackageId>
     <Title>Avalonia Templates</Title>
     <Description>Templates for creating Avalonia applications and libraries.</Description>
     <PackageTags>dotnet-new;templates;avalonia</PackageTags>
